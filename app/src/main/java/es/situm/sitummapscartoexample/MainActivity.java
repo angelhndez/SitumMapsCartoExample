@@ -160,7 +160,6 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
             }
         });
 
-
         Toast.makeText(this, "SITUM MAP LOADED", Toast.LENGTH_LONG).show();
 
 
