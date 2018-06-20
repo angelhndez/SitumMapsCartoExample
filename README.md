@@ -5,7 +5,7 @@ This project is an example of how to integrate the SitumMapsCarto library in you
 To integrate the library follow the next steps:
 
 
-1.- Copy the sitummapscarto-release.arr library into your /libs folder.
+1.- Copy the sitummapscarto-release.aar library into your /libs folder.
 
 2.- Add the following dependencies to your build.gradle:
 
