@@ -50,10 +50,6 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
         //LOAD MAP LAYOUT
         MapView mapview = findViewById(R.id.sitummap);
 
-        //SET MAP SETTINGS
-        DefaultCartoSettings settings = new DefaultCartoSettings();
-        mapview.setSettings(settings);
-
         SitumSdk.communicationManager().fetchBuildings(new Handler<Collection<es.situm.sdk.model.cartography.Building>>() {
             @Override
             public void onSuccess(Collection<es.situm.sdk.model.cartography.Building> buildings) {
