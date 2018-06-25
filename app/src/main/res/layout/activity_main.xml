@@ -13,12 +13,6 @@
         android:layout_height="match_parent" >
 
     </es.situm.sitummapscarto.MapView>
-
-    <Button
-        android:id="@+id/btclear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clear Map" />
-
+    
 
 </FrameLayout>

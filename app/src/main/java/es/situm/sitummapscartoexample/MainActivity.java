@@ -67,16 +67,6 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
         });
 
 
-        //CLEAR THE MAP
-        Button btclear = (Button) findViewById(R.id.btclear);
-        btclear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (map != null) map.clear();
-            }
-        });
-
     }
 
     @Override
