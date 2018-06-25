@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
         });
 
 
-        map.setOnPoiSelectionChanguedListener(new OnPoiSelectedListener() {
+        map.setOnPoiSelectionListener(new OnPoiSelectedListener() {
             @Override
             public void onPoiSelected(Poi poi) {
 
@@ -100,9 +100,10 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
         });
 
 
+
         map.setOnBuildingDataSourceListener(new BuildingDataSource() {
             @Override
-            public void onFetchCompleteInformation(Building building, @NonNull BuildingInfoCallback callback) {
+            public void completeBuildingInfo(Building building, @NonNull BuildingInfoCallback callback) {
 
                 SitumSdk.communicationManager().fetchBuildingInfo(building, new Handler<BuildingInfo>() {
                     @Override
@@ -127,11 +128,11 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
         });
 
 
-        map.setOnActiveBuildingChangedListener(new OnActiveBuildingListener() {
+        map.setOnActiveBuildingListener(new OnActiveBuildingListener() {
             @Override
             public void activeBuilding(@NonNull Building building) {
 
-                Toast.makeText(MainActivity.this,"Active building changed: "+building.getIdentifier(),Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Active building: "+building.getIdentifier(),Toast.LENGTH_LONG).show();
 
             }
 

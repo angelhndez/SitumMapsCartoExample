@@ -40,12 +40,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.google.android.gms:play-services-maps:11.8.0'
     compile 'com.google.android.gms:play-services-location:11.8.0'
-    compile('es.situm:situm-sdk:2.16.0@aar') {
+    compile('es.situm:situm-sdk:2.22.0@aar') {
 
         transitive = true
     }
 
-    compile(name:'sitummapscarto-release', ext:'aar')
+    compile(name:'sitummapscarto-1.0.0', ext:'aar')
 
 
 }
