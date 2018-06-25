@@ -43,9 +43,6 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
 
         //INIT SITUM SDK AND LOGIN
         SitumSdk.init(this);
-        SitumSdk.configuration().setCacheMaxAge(5, TimeUnit.MINUTES);
-        SitumSdk.configuration().setDashboardURL("YOUR_DASHBOARD");
-        SitumSdk.configuration().setApiKey("YOUR_EMAIL", "YOUR_APIKEY");
 
         //LOAD MAP LAYOUT
         MapView mapview = findViewById(R.id.sitummap);
