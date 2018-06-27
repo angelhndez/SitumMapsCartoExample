@@ -33,7 +33,7 @@ This is an Android application designed with the SitumMapsCarto library. With th
 
 ### Introduction <a name="introduction"></a>
 
-SitumMapsCarto is a library that allow any developer to build and integrate the cartography functionalities of the sdk of situm very easy
+SitumMapsCarto is a library that allow any developer to build and integrate the cartography functionalities of the sdk of situm very easy.
 
 
 
