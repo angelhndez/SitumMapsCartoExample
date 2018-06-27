@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
         });
 
 
-
         map.setOnBuildingDataSourceListener(new BuildingDataSource() {
             @Override
             public void completeBuildingInfo(Building building, @NonNull BuildingInfoCallback callback) {
