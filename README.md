@@ -33,7 +33,7 @@ This is an Android application designed with the SitumMapsCarto library. With th
 
 ### Introduction <a name="introduction"></a>
 
-SitumMapsCarto is a library that allow any developer to build and integrate the cartography functionalities of the sdk of situm very easy :
+SitumMapsCarto is a library that allow any developer to build and integrate the cartography functionalities of the sdk of situm very easy
 
 
 
@@ -67,7 +67,7 @@ allprojects {
 }
 ```
 
-* Then copy the sitummapscarto-release.aar library into your /libs folder and add the Situm SDK library and the sitummapscarto library dependencies into the section *dependencies* of the app *build.gradle*.
+* Then copy the sitummapscarto-1.0.0.aar library into your /libs folder and add the Situm SDK library and the sitummapscarto library dependencies into the section *dependencies* of the app *build.gradle*.
 It's important to add the `transitive = true` property to download the Situm SDK dependencies.
 
 ```groovy
