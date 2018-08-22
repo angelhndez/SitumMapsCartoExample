@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.GoogleMap;
+
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
 
         //LOAD MAP LAYOUT
         MapView mapview = findViewById(R.id.sitummap);
+
 
         SitumSdk.communicationManager().fetchBuildings(new Handler<Collection<es.situm.sdk.model.cartography.Building>>() {
             @Override
@@ -142,6 +145,10 @@ public class MainActivity extends AppCompatActivity implements OnSitumMapReadyCa
 
             }
         });
+
+
+        GoogleMap gmap = map.getGoogleMap();
+
 
         Toast.makeText(this, "SITUM MAP LOADED", Toast.LENGTH_LONG).show();
 

@@ -27,6 +27,7 @@ This is an Android application designed with the SitumMapsCarto library. With th
 3. [Interact with the buildings](#interactbuildings)
 4. [Interact with floors](#interactfloors)
 5. [Interact with POIs](#interactpois)
+6. [Interact with Google Map](#interactgooglemap)
 
 #### [More information](#moreinfo)
 
@@ -129,6 +130,10 @@ An api key is needed to add Google Maps Services and use them in an application.
 you can visit the [official Google Maps documentation](https://developers.google.com/maps/documentation/android-api/intro).
 To obtain a Google api key please refer to the same documentation:
 [obtain Google Maps api key](https://developers.google.com/maps/documentation/android-api/signup),
+
+### Important!
+
+If you clone this project, remember to change the Situm credentials and the Google Maps API Key seen in steps 4 and 5.
 
 
 ### <a name="mapview"><a/> Step 5: Add the MapView view to your layout
@@ -353,7 +358,15 @@ You can implement `setOnPoiSelectionListener` listener to know when the POI sele
  });
 ```
 
+## <a name="interactgooglemap"></a> Interact with Google Map
+
+You can access to the Google Map object through  `getGoogleMap()` method:
+```java
+ GoogleMap gmap = map.getGoogleMap();
+```
+
+
 ## <a name="moreinfo"></a> More information
 
-More info is available at our [Developers Page](https://des.situm.es/developers/pages/android/).
+More info is available at our [Developers Page](http://developers.situm.es/pages/android/).
 For any other question, contact us [here](mailto:support@situm.es)
